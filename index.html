@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChanAID - PumpFun Creator Rewards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-glow"></div>
+    <div class="scanlines"></div>
+    
+    <div class="container">
+        <header class="glass-header">
+            <div class="logo-area">
+                <div class="logo-icon">CA</div>
+                <h1>ChanAID</h1>
+            </div>
+            <button class="connect-btn">Connect Wallet</button>
+        </header>
+
+        <main>
+            <div class="hero-grid">
+                <div class="left-panel">
+                    <div class="glass-card image-card">
+                        <div class="status-badge">
+                            <span class="pulse-dot"></span> Live Distribution
+                        </div>
+                        <img src="assets/anime_girl.png" alt="ChanAID Nurse" id="mascot">
+                    </div>
+                </div>
+                
+                <div class="right-panel">
+                    <div class="glass-card stats-card">
+                        <div class="timer-section">
+                            <h3>Distribution Countdown</h3>
+                            <div id="timer" class="glitch-text">02:00</div>
+                        </div>
+
+                        <div class="stats-grid">
+                            <div class="stat-box">
+                                <span class="stat-label">Market Cap</span>
+                                <span class="stat-value" id="mcap">$6.53k</span>
+                                <span class="stat-trend">▲ +12.4%</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-label">Creator Fees</span>
+                                <span class="stat-value" id="creator-fees">0.200 SOL</span>
+                                <div class="progress-bar"><div class="progress-fill"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card leaderboard-card">
+                        <div class="card-header">
+                            <h2>🏆 Top Holders</h2>
+                            <span class="live-indicator">Live Updates</span>
+                        </div>
+                        <div class="table-header">
+                            <span>Rank</span>
+                            <span>Address</span>
+                            <span>Share</span>
+                        </div>
+                        <ul class="holder-list" id="holder-list">
+                            <!-- Populated by JS -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
